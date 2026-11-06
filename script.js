@@ -1,12 +1,17 @@
 // A simple chapter navigator with browser history, so each step can be revisited.
 const CHAPTERS = [...document.querySelectorAll(".chapter")];
 const CHAPTER_IDS = CHAPTERS.map((chapter) => chapter.id);
+const PASSCODE = "0708";
 
 const progressLabel = document.querySelector("#progress-label");
 const progressCount = document.querySelector("#progress-count");
 const progressBar = document.querySelector(".progress-track");
 const progressFill = document.querySelector(".progress-fill");
 const entryGate = document.querySelector("#entry-gate");
+const passcodeScreen = document.querySelector("#passcode-screen");
+const giftIntro = document.querySelector("#gift-intro");
+const passcodeInput = document.querySelector("#passcode-input");
+const passcodeError = document.querySelector("#passcode-error");
 const whatButton = document.querySelector("#what-button");
 const whatReveal = document.querySelector("#what-reveal");
 const choiceArea = document.querySelector("#choice-area");
@@ -31,6 +36,21 @@ function goToChapter(id, addHistory = true) {
   }
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// This client-side passcode is a playful gate, not security for private content.
+document.querySelector("#passcode-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (passcodeInput.value === PASSCODE) {
+    passcodeScreen.hidden = true;
+    giftIntro.hidden = false;
+    passcodeError.textContent = "";
+    passcodeInput.value = "";
+    return;
+  }
+  passcodeError.textContent = "That isn't quite it, lovely. Try again ♡";
+  passcodeInput.value = "";
+  passcodeInput.focus();
+});
 
 whatButton.addEventListener("click", () => {
   const isOpening = whatReveal.hidden;

@@ -13,7 +13,21 @@
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
   <main class="entry-gate" id="entry-gate">
-    <section class="gate-card gift-intro" id="gift-intro" aria-labelledby="gift-intro-title">
+    <section class="gate-card" id="passcode-screen" aria-labelledby="gate-title">
+      <span class="gate-flower" aria-hidden="true">✿</span>
+      <p class="gate-kicker">just for one special person</p>
+      <h1 id="gate-title">A little secret<br>between us <span>♡</span></h1>
+      <p class="gate-copy">Enter our special date to come in.</p>
+      <form class="passcode-form" id="passcode-form">
+        <label class="visually-hidden" for="passcode-input">Four-digit passcode</label>
+        <input id="passcode-input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="••••" aria-describedby="passcode-error" required>
+        <button class="button button-primary" type="submit">Unlock your little gift <span>♡</span></button>
+        <p class="passcode-error" id="passcode-error" role="status" aria-live="polite"></p>
+      </form>
+      <p class="gate-footnote">a date only we know</p>
+    </section>
+
+    <section class="gate-card gift-intro" id="gift-intro" aria-labelledby="gift-intro-title" hidden>
       <span class="gate-flower" aria-hidden="true">✧</span>
       <p class="gate-kicker">for you, with all my love</p>
       <h1 id="gift-intro-title">I made something<br>for you <span>♡</span></h1>
