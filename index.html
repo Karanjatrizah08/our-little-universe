@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="A little love story made especially for My Lovely Baby.">
+  <title>Our Little Universe 💜</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <main class="entry-gate" id="entry-gate">
+    <section class="gate-card gift-intro" id="gift-intro" aria-labelledby="gift-intro-title">
+      <span class="gate-flower" aria-hidden="true">✧</span>
+      <p class="gate-kicker">for you, with all my love</p>
+      <h1 id="gift-intro-title">I made something<br>for you <span>♡</span></h1>
+      <button class="button button-soft what-button" id="what-button" type="button" aria-expanded="false" aria-controls="what-reveal">What?</button>
+      <div class="what-reveal" id="what-reveal" hidden>
+        <p>A little corner of the world, filled with things I wanted you to know.</p>
+        <h2>Wanna see it?</h2>
+        <div class="choice-area" id="choice-area">
+          <button class="button button-primary yes-button" id="yes-button" type="button">Yes, show me <span>♡</span></button>
+          <button class="button button-soft no-button" id="no-button" type="button">No</button>
+        </div>
+        <p class="no-message" id="no-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <header class="site-header" hidden>
+    <a class="brand" href="#home" aria-label="Start the story">a little universe <span>♡</span></a>
+    <div class="chapter-progress" aria-label="Story progress">
+      <span class="progress-label" id="progress-label">A little hello</span>
+      <div class="progress-track" role="progressbar" aria-label="Story progress" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1">
+        <span class="progress-fill"></span>
+      </div>
+      <span class="progress-count" id="progress-count">01 / 06</span>
+    </div>
+  </header>
+
+  <main id="story" hidden>
+    <section class="chapter chapter-home active" id="home" data-title="A little hello" aria-labelledby="home-title" hidden>
+      <div class="chapter-inner home-inner">
+        <div class="intro-stamp" aria-hidden="true"><span>♡</span><small>made<br>for you</small></div>
+        <p class="eyebrow">a small story, with a very big heart</p>
+        <h1 id="home-title">For My<br><span>Lovely Baby</span> <b>♡</b></h1>
+        <p class="hero-copy">Out of all the people in this world,<br>I'm so glad it's you.</p>
+        <div class="hero-doodle" aria-hidden="true"><span class="doodle-heart">♡</span><span class="doodle-star star-a">✦</span><span class="doodle-star star-b">✧</span><span class="doodle-line"></span></div>
+        <button class="button button-primary" type="button" data-next>Open your little gift <span>→</span></button>
+        <p class="chapter-caption">take my hand and follow along</p>
+      </div>
+    </section>
+
+    <section class="chapter" id="letter" data-title="A note from me" aria-labelledby="letter-title" hidden>
+      <div class="chapter-inner paper-layout">
+        <div class="chapter-heading">
+          <span class="chapter-number">01 — a note from me</span>
+          <h2 id="letter-title">A Letter From<br>My Heart <span>💌</span></h2>
+          <p>For a moment when you need a reminder.</p>
+        </div>
+        <article class="letter-card">
+          <span class="letter-mark" aria-hidden="true">“</span>
+          <p class="letter-salutation">My Lovely Baby,</p>
+          <div class="letter-copy" id="letter-copy">I wish I could wrap up all the ways you make me happy and give them back to you. You make ordinary days feel brighter just by being in them, and your smile has a way of making everything feel a little softer.
+
+Thank you for the little things, for making me feel appreciated, and for being so wonderfully, completely yourself. Every moment we share is one I hold close, and I feel so lucky to have you in my life.
+
+No matter where life takes us, I hope you always know how special you are to me. I'm so glad it's you.</div>
+          <p class="letter-signoff">All my love, always <span>♡</span></p>
+        </article>
+        <div class="chapter-controls"><button class="text-button" type="button" data-prev>← Back</button><button class="button button-primary" type="button" data-next>Keep going <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="reasons" data-title="A few reasons" aria-labelledby="reasons-title" hidden>
+      <div class="chapter-inner reasons-layout">
+        <div class="chapter-heading">
+          <span class="chapter-number">02 — a few reasons</span>
+          <h2 id="reasons-title">Things I Adore<br>About You <span>♡</span></h2>
+          <p>Just a few from a list that could go on forever.</p>
+        </div>
+        <div class="reasons-grid">
+          <article class="reason-card"><span>01</span><h3>Your smile</h3><p>It makes my whole day a little brighter.</p><i>♡</i></article>
+          <article class="reason-card"><span>02</span><h3>Your personality</h3><p>There's nobody else quite like you.</p><i>✧</i></article>
+          <article class="reason-card"><span>03</span><h3>How you make me feel</h3><p>So seen, appreciated, and cared for.</p><i>♡</i></article>
+          <article class="reason-card"><span>04</span><h3>The little things</h3><p>All the thoughtful things you do.</p><i>✦</i></article>
+          <article class="reason-card"><span>05</span><h3>Our conversations</h3><p>Even the ordinary moments feel special.</p><i>♡</i></article>
+          <article class="reason-card"><span>06</span><h3>Simply being you</h3><p>You are my favourite person. Just because.</p><i>✧</i></article>
+        </div>
+        <div class="chapter-controls"><button class="text-button" type="button" data-prev>← Back</button><button class="button button-primary" type="button" data-next>One more thing <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="soundtrack" data-title="Our soundtrack" aria-labelledby="soundtrack-title" hidden>
+      <div class="chapter-inner music-layout">
+        <div class="music-sleeve" aria-hidden="true">
+          <div class="record"><span>♡</span></div>
+          <span class="music-note note-one">♪</span><span class="music-note note-two">♫</span>
+          <small>side A<br>just us</small>
+        </div>
+        <div class="music-copy">
+          <span class="chapter-number">03 — our soundtrack</span>
+          <h2 id="soundtrack-title">A Song For<br>Every Feeling <span>🎶</span></h2>
+          <p>I picked a song for us. Press the button to listen on Spotify.</p>
+          <a class="button button-primary spotify-link" id="spotify-link" href="https://open.spotify.com/track/0tCd1wfXWkZsWB8mRop3B2?si=cdce3311de2648ae" target="_blank" rel="noopener noreferrer">Listen to our song <span>♫</span></a>
+        </div>
+        <div class="chapter-controls"><button class="text-button" type="button" data-prev>← Back</button><button class="button button-primary" type="button" data-next>Next little chapter <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="chapter" id="photos" data-title="A little look at me" aria-labelledby="photos-title" hidden>
+      <div class="chapter-inner photo-layout">
+        <div class="chapter-heading">
+          <span class="chapter-number">04 — a little look at me</span>
+          <h2 id="photos-title">A Few Pictures<br>Just For You <span>📷</span></h2>
+          <p>Since we don't have photos together yet, here's a little piece of my world.</p>
+        </div>
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <div class="photo-frame has-photo"><img class="memory-photo" src="images/photo-0.jpg" alt="A photo of me, just for you"></div>
+          </figure>
+          <figure class="photo-card">
+            <div class="photo-frame has-photo"><img class="memory-photo" src="images/photo-1.jpg" alt="A little glimpse of my day"></div>
+          </figure>
+          <figure class="photo-card">
+            <div class="photo-frame has-photo"><img class="memory-photo" src="images/photo-2.jpg" alt="One more photo for you"></div>
+          </figure>
+          <figure class="photo-card">
+            <div class="photo-frame has-photo"><img class="memory-photo" src="images/photo-3.jpg" alt="A photo I wanted to share with you"></div>
+          </figure>
+          <figure class="photo-card">
+            <div class="photo-frame has-photo"><img class="memory-photo" src="images/photo-4.jpg" alt="Another photo, just for you"></div>
+          </figure>
+          <figure class="photo-card">
+            <div class="photo-frame has-photo"><img class="memory-photo" src="images/photo-5.jpg" alt="One last favourite photo"></div>
+          </figure>
+        </div>
+        <div class="chapter-controls"><button class="text-button" type="button" data-prev>← Back</button><button class="button button-primary" type="button" data-next>There’s one last thing <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-last" id="surprise" data-title="Just for you" aria-labelledby="surprise-title" hidden>
+      <div class="chapter-inner surprise-layout">
+        <div class="gift-illustration" aria-hidden="true"><div class="gift-box"><span class="gift-ribbon"></span><span class="gift-bow">♡</span></div><span class="gift-star gift-star-one">✦</span><span class="gift-star gift-star-two">✧</span></div>
+        <span class="chapter-number">05 — the very last page</span>
+        <h2 id="surprise-title">Baby, I Have<br>Something for You <span>🎁</span></h2>
+        <p>A little reminder to keep in your heart.</p>
+        <button class="button button-primary surprise-button" id="surprise-button" type="button" aria-expanded="false" aria-controls="surprise-message">Open your last little note <span>♡</span></button>
+        <div class="surprise-message" id="surprise-message" hidden>
+          <span class="surprise-heart" aria-hidden="true">♡</span>
+          <p>In case you ever forget, I hope this little corner reminds you that you are appreciated, thought of, and loved. You have such a special place in my heart, My Lovely Baby. Thank you for being you. 💜🩵</p>
+        </div>
+        <div class="chapter-controls final-controls"><button class="text-button" type="button" data-prev>← Read it again</button><button class="button button-soft" id="restart-story" type="button">Start our story over ↺</button></div>
+
+      </div>
+      <footer class="site-footer"><p>Made with love, just for you <span>♡</span></p></footer>
+    </section>
+  </main>
+</body>
+</html>
